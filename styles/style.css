@@ -28,6 +28,9 @@ nav > ul > li, nav a{
  
 }
 
+a{
+  font-size: 30px;
+}
 /*Ctrl + f5 */
 /* hot reload : recharge le style css sur la page */
 
@@ -50,7 +53,8 @@ nav > ul > li, nav a{
     }
      
     #menu-button{
-        font-style: white;
+      font-size: 40px;
+        color: white;
     }
 }
 
