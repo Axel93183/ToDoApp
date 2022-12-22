@@ -1,0 +1,56 @@
+*{
+    margin :0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1{
+  color: royalblue;
+}
+
+nav{
+  display: flex;
+  background-color: rgb(47, 59, 96);
+}
+
+nav > svg{
+  display : none;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav > ul > li, nav a{
+  color:whitesmoke;
+  padding: 0 15px;
+ 
+}
+
+/*Ctrl + f5 */
+/* hot reload : recharge le style css sur la page */
+
+@media (max-width:600px){
+    nav>svg{
+        display: block;
+        fill: white;
+        width: 32px;
+    }
+
+    nav>ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(68, 83, 130);
+        top: 50px;
+        min-width: 50%;
+        min-height: 100vh;
+        left: -100%;
+        transition: all 0.5s ease-in-out;
+    }
+     
+    #menu-button{
+        font-style: white;
+    }
+}
+
