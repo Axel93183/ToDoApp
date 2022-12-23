@@ -7,13 +7,13 @@ menuButton.addEventListener("click", function() {
 
  let menu = document.querySelector("nav > ul");
  console.dir(menu);
- if (menu.style.left == '0px') {
-    menuButton.className = "bi bi-list";
-    menu.style.left = '-100%';
+ if (menu.style.left == '-100%') {
+    menuButton.className = "bi bi-x-lg";
+    menu.style.left = '0px';
 
  } else  {
-    menuButton.className = "bi bi-x-lg";
-    menu.style.left = '0px'
+    menuButton.className = "bi bi-list";
+    menu.style.left = '-100%';
  } 
 
 }
